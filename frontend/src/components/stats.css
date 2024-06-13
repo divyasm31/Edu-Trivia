@@ -1,0 +1,4 @@
+.stat-main{
+    width: calc(100%-250px);
+    display:flex;
+}

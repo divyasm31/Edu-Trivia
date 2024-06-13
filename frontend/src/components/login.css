@@ -1,0 +1,31 @@
+
+.login-heading{
+    font-family: "Yeseva One", serif;
+    font-weight: 400;
+    font-style: normal;
+    cursor: pointer;
+}
+.form-container {
+    box-shadow: 0 4px 8px lightcyan;
+    background-color: lavenderblush;
+    border-color: cyan;
+    animation: float-login 3s ease-in-out infinite;
+  }
+  
+  @keyframes float-login {
+    0% {
+      transform: translatey(0px);
+    }
+    50% {
+      transform: translatey(-10px);
+    }
+    100% {
+      transform: translatey(0px);
+    }
+  }
+  .login-button{
+    background-color: #b4eaff;
+  }
+  .login-button:hover{
+    background-color: #f0fff8;
+  }

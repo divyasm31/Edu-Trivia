@@ -1,0 +1,42 @@
+/* .menu-btn {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1100;
+  } */
+  
+.sidebar {
+    position: fixed;
+    top: 80px; 
+    left: 0;
+    width: 240px;
+    height: calc(100% - 80px);
+    background-color: rgb(1, 1, 22);
+    z-index: 1000;
+    /* transition: transform 0.3s ease-in-out; */
+    border-right:2px solid ivory;
+    /* margin-right: 70px; */
+  }
+  
+  .header-para {
+    font-family: "Yeseva One", serif;
+    font-weight: 400;
+    font-style: normal;
+    cursor: pointer;
+    color: lemonchiffon;
+    transition: font-size 0.3s, text-shadow 0.3s;
+}
+
+.header-para:hover {
+    font-size: 4vh;
+    text-shadow: 2px 2px 2px lightcyan;
+}
+
+.icon {
+    transition: font-size 0.3s, text-shadow 0.3s;
+}
+
+.icon:hover {
+    font-size: 4vh;
+    text-shadow: 2px 2px 2px lightcyan;
+}

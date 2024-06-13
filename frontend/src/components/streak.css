@@ -1,0 +1,35 @@
+.streak {
+    position: fixed;
+    top: 20%;
+    left: 95%;
+    transform: translate(-50%, -50%);
+    /* background: green; */
+    color: gold;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .streak.show {
+    opacity: 1;
+    visibility: visible;
+    animation: dropAndDisappear 1s ease-in-out;
+  }
+  
+  @keyframes dropAndDisappear {
+    0% {
+      transform: translate(-50%, -100%);
+    }
+    50% {
+      transform: translate(-50%, 0%);
+    }
+    100% {
+      transform: translate(-50%, 100%);
+      opacity: 0;
+    }
+  }
+  

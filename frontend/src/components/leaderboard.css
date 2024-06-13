@@ -1,0 +1,62 @@
+th {
+    padding: 2vh 4vh; 
+    color: #ffc0cb;
+    text-align: center; 
+    border-bottom: 2px solid #f8d0a8;
+  }
+  
+  td {
+    padding: 2vh 4vh; 
+    color: #d2c7ff;
+    text-align: center; 
+  }
+  
+  .highlight {
+    background-color:#fffedd ; 
+    font-weight: bold;
+    animation: shine 2s infinite alternate;
+  }
+  .highlight td{
+    color: #000000;
+  }
+  .highlight:hover{
+    box-shadow: 1px 2px 4px rgb(197, 243, 243);
+  }
+
+  
+  tr, thead, tbody {
+    background-color: transparent;
+  }
+  
+  table {
+    background-color: transparent;
+    width: 70vw;
+    font-size: 3vh;
+    margin: auto; 
+    border-collapse: separate;
+    border-spacing: 0 1vh; 
+    cursor: pointer;
+  }
+  
+  .containerDashboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .sparkling {
+    font-size: 2vh;
+    color: lightcyan;
+    animation: shine 1.5s infinite;
+  }
+  
+  @keyframes shine {
+    0% { text-shadow: 0 0 5px lightcyan; }
+    50% { text-shadow: 0 0 15px lightcyan, 0 0 20px lightcyan; }
+    100% { text-shadow: 0 0 5px lightcyan; }
+  }

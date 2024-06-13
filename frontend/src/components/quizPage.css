@@ -1,0 +1,113 @@
+
+.quiz{
+  display: block;
+  margin: auto;
+  margin-bottom: 50px;
+}
+  .ques{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #d79bf4;
+    font-weight: bolder;
+    font-size: 5vh;
+  }
+  .completed-container {
+    display: block;
+    margin: auto;
+    text-align: center;
+  }
+
+
+.loader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(5, 6, 23, 0.8); 
+  z-index: 9999; 
+}
+
+.loader {
+  /* border: 5px solid lightcyan;  */
+  border-top: 7px solid #3498db; 
+  border-right: 7px solid #f39c12; 
+  border-bottom: 7px solid #e74c3c; 
+  border-left: 7px solid #9b59b6; 
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  animation: spin 1s linear infinite, lightning 1s linear infinite;
+  box-shadow: 0 0 5px lightcyan;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes lightning {
+  0%, 100% {
+    border-top-color: #3498db;
+    border-right-color: #f39c12;
+    border-bottom-color: #e74c3c;
+    border-left-color: #9b59b6;
+  }
+  25% {
+    border-top-color: #f39c12;
+    border-right-color: #e74c3c;
+    border-bottom-color: #9b59b6;
+    border-left-color: #3498db;
+  }
+  50% {
+    border-top-color: #e74c3c;
+    border-right-color: #9b59b6;
+    border-bottom-color: #3498db;
+    border-left-color: #f39c12;
+  }
+  75% {
+    border-top-color: #9b59b6;
+    border-right-color: #3498db;
+    border-bottom-color: #f39c12;
+    border-left-color: #e74c3c;
+  }
+}
+
+    .opn{
+    padding: 2vh 2vh; 
+    font-size: 1.5rem; 
+    width: 100%;
+    height: 30vh;
+    text-align: center;
+    background-color: #ffffba; 
+    color: white;
+    border: none;
+    border-radius: 5vh;
+    cursor: pointer;
+    text-decoration: none;
+    color: #741d5b;
+    margin: 2vh; 
+  }
+    .opn:hover {
+        background-color:  #ffd5c2; 
+        box-shadow: 0 8px 16px #ff679d, 
+                    0 4px 8px #f63b9f; 
+        transition: box-shadow 0.5s ease-out;
+        transition: background-color 0.8s;
+  }
+  .choice {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2vh;
+  }
+  
+  .choice .ans-col {
+    flex-basis: calc(50% - 4vh);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2vh 0;  
+  }

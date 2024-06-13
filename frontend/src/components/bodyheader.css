@@ -1,0 +1,22 @@
+.header-para {
+    font-family: "Yeseva One", serif;
+    font-weight: 400;
+    font-style: normal;
+    cursor: pointer;
+    color: lemonchiffon;
+    transition: font-size 0.3s, text-shadow 0.3s;
+}
+
+.header-para:hover {
+    font-size: 4vh;
+    text-shadow: 2px 2px 2px lightcyan;
+}
+
+.icon {
+    transition: font-size 0.3s, text-shadow 0.3s;
+}
+
+.icon:hover {
+    font-size: 4vh;
+    text-shadow: 2px 2px 2px lightcyan;
+}

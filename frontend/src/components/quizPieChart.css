@@ -1,0 +1,39 @@
+
+  .pie-chart {
+    display: block;
+    margin: auto;
+    padding: 20px;
+    max-width: 30vw;
+    min-width: 30vw;
+    height: 60vh;
+    box-shadow: 0 4px 8px rgba(244, 244, 244, 0.927);
+    margin-bottom: 20vh;
+    background-color: transparent;
+    border: none;
+    color: #d8dae3;
+    border-radius: 10px;
+    /* box-shadow: 0 4px 8px rgb(187, 237, 249); */
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    animation: float-pie-chart 3s ease-in-out infinite;
+  }
+  @keyframes float-pie-chart {
+    0% {
+      transform: translatey(0px);
+    }
+    50% {
+      transform: translatey(-2px);
+    }
+    100% {
+      transform: translatey(0px);
+    }
+  }
+  .pie-chart:hover {
+    background-color: black;
+    color: whitesmoke;
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgb(187, 237, 249);
+    z-index: 10;
+  }
